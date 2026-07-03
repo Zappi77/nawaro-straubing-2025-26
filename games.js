@@ -596,7 +596,720 @@ const playerProfileUrls = {
   "Sophie Dreblow": "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308803&userId=383895"
 };
 
-const gameSummaries = {};
+const matchArticles = {
+  "3004": [
+    {
+      "title": "Eintracht Spontent erkämpft Punkt.",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778429330",
+      "origin": "ESD"
+    },
+    {
+      "title": "Saisonauftakt geglückt: NawaRo setzt sich",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778408614",
+      "origin": "STR"
+    },
+    {
+      "title": "Saisonauftakt in Düsseldorf",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778383087",
+      "origin": "ESD"
+    },
+    {
+      "title": "Das Warten hat ein Ende",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778383050",
+      "origin": "STR"
+    }
+  ],
+  "3010": [
+    {
+      "title": "Volleys jubeln nach 145 Minuten",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778504288",
+      "origin": "BVL"
+    },
+    {
+      "title": "Leverkusen entführt Zusatzpunkt aus Straub",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778488123",
+      "origin": "STR"
+    },
+    {
+      "title": "Mammut-Tour für die Volleys",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778466715",
+      "origin": "BVL"
+    },
+    {
+      "title": "Straubing empfängt BayerVolleys Leverkusen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778459251",
+      "origin": "STR"
+    }
+  ],
+  "3016": [
+    {
+      "title": "3:2-Tiebreak-Erfolg in Oythe!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778576820",
+      "origin": "STR"
+    },
+    {
+      "title": "Oythe zeigt großen Kampfgeist",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778568592",
+      "origin": "OYT"
+    },
+    {
+      "title": "Schwere Auswärtsaufgabe",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778543330",
+      "origin": "STR"
+    },
+    {
+      "title": "VfL Oythe empfängt NawaRo Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778509960",
+      "origin": "OYT"
+    }
+  ],
+  "3024": [
+    {
+      "title": "Leider blieben die Ligapunkte in Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778675270",
+      "origin": "NVM"
+    },
+    {
+      "title": "3:1 gegen Markkleeberg - NawaRo Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778657070",
+      "origin": "STR"
+    },
+    {
+      "title": "Mission dreifacher Punktgewinn",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778632386",
+      "origin": "STR"
+    },
+    {
+      "title": "Erste lange Auswärtsfahrt nach Ostbayern",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778608547",
+      "origin": "NVM"
+    }
+  ],
+  "3034": [
+    {
+      "title": "Straubing zieht bei den Raben den Kürzeren",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778784266",
+      "origin": "STR"
+    },
+    {
+      "title": "Rote Raben erst einmal auf Platz zwei",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778774762",
+      "origin": "RRV"
+    },
+    {
+      "title": "Derbyfieber",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778753742",
+      "origin": "STR"
+    },
+    {
+      "title": "Niederbayernderby mit besonderem Reiz",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778747529",
+      "origin": "RRV"
+    }
+  ],
+  "3038": [
+    {
+      "title": "BBSC mit nächsten Schritt vorwärts",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779014400",
+      "origin": "BER"
+    },
+    {
+      "title": "Klarer 3:0-Heimsieg gegen Berlin!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778996158",
+      "origin": "STR"
+    },
+    {
+      "title": "NawaRo Straubing empfängt BBSC Berlin!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778961061",
+      "origin": "STR"
+    }
+  ],
+  "3046": [
+    {
+      "title": "Zu Haus noch keine Macht",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779285948",
+      "origin": "SWS"
+    },
+    {
+      "title": "Gelingt im vierten Spiel der erste Sieg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779243814",
+      "origin": "SWS"
+    },
+    {
+      "title": "Doppelte Auswärtsaufgabe",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779239318",
+      "origin": "STR"
+    }
+  ],
+  "3052": [
+    {
+      "title": "Waldgirmes verpasst Punktgewinn",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779392290",
+      "origin": "TVW"
+    },
+    {
+      "title": "Beeindruckender Heimsieg!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779360912",
+      "origin": "STR"
+    },
+    {
+      "title": "Straubing empfängt den Tabellenzweiten.",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779342311",
+      "origin": "STR"
+    }
+  ],
+  "3059": [
+    {
+      "title": "Knappe 2:3-Niederlage vs. Planegg.",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779489769",
+      "origin": "STR"
+    },
+    {
+      "title": "Straubing will Revanche gegen Planegg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779481508",
+      "origin": "STR"
+    }
+  ],
+  "3064": [
+    {
+      "title": "Starker Auftakt, bitteres Ende",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779583782",
+      "origin": "DSK"
+    },
+    {
+      "title": "3 Punkte am Nikolausabend",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779577451",
+      "origin": "STR"
+    },
+    {
+      "title": "Double-Header auswärts!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779566454",
+      "origin": "STR"
+    },
+    {
+      "title": "Köln mit Härtetest gegen NawaRo Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779549660",
+      "origin": "DSK"
+    }
+  ],
+  "3073": [
+    {
+      "title": "Glatte Derby-Niederlage",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779713818",
+      "origin": "TVD"
+    },
+    {
+      "title": "Straubing landet einen überzeugenden Sieg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779697337",
+      "origin": "STR"
+    },
+    {
+      "title": "Derby dahoam gegen Dingolfing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779667473",
+      "origin": "STR"
+    },
+    {
+      "title": "Niederbayern-Derby in Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779640489",
+      "origin": "TVD"
+    }
+  ],
+  "3083": [
+    {
+      "title": "Kein Sieg beim Dezember-Doppelpack",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779640795",
+      "origin": "TVH"
+    },
+    {
+      "title": "SECHS-PUNKTE-WOCHENENDE FÜR NAWARO!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779594527",
+      "origin": "STR"
+    },
+    {
+      "title": "NawaRo will in Hörde bestehen.",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779584492",
+      "origin": "STR"
+    },
+    {
+      "title": "Willkommene herrausforderung",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779559444",
+      "origin": "TVH"
+    }
+  ],
+  "3087": [
+    {
+      "title": "6-Punkte-Wochenende!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780018188",
+      "origin": "STR"
+    },
+    {
+      "title": "Spiel zwei am Wochenende",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780010143",
+      "origin": "STR"
+    }
+  ],
+  "3095": [
+    {
+      "title": "3:1-Heimsieg über Düsseldorf",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780004838",
+      "origin": "STR"
+    },
+    {
+      "title": "Doppel-Heimspielwochenende",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779989063",
+      "origin": "STR"
+    }
+  ],
+  "3101": [
+    {
+      "title": "Bayer unterliegt nach großem Kampf",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780122793",
+      "origin": "BVL"
+    },
+    {
+      "title": "NawaRo entführt Dreier aus Leverkusen!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780095356",
+      "origin": "STR"
+    },
+    {
+      "title": "Volleys sehen Chance in Außenseiterrolle",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780088847",
+      "origin": "BVL"
+    },
+    {
+      "title": "Erstmalig auswärts 2026",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780076274",
+      "origin": "STR"
+    }
+  ],
+  "3107": [
+    {
+      "title": "NawaRo behält souverän die Oberhand!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780182903",
+      "origin": "STR"
+    },
+    {
+      "title": "Spitzenspiel in Straubing.",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780157763",
+      "origin": "STR"
+    }
+  ],
+  "3115": [
+    {
+      "title": "Leider NawaRo auch im Rückspiel zu stark",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779290045",
+      "origin": "NVM"
+    },
+    {
+      "title": "Sechs-Punkte-Wochenende für NawaRo!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779284693",
+      "origin": "STR"
+    },
+    {
+      "title": "Doppelte Auswärtsaufgabe",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779239298",
+      "origin": "STR"
+    },
+    {
+      "title": "Doppel-Heimspieltag in Markkleeberg",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779229848",
+      "origin": "NVM"
+    }
+  ],
+  "3125": [
+    {
+      "title": "Klare Ansage",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780379225",
+      "origin": "STR"
+    },
+    {
+      "title": "Rote Raben siegen im Niederbayernderby",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780370065",
+      "origin": "RRV"
+    },
+    {
+      "title": "Eine ganz besondere Herausforderung",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780361600",
+      "origin": "RRV"
+    },
+    {
+      "title": "Kampf um die Vorherrschaft in Niederbayern",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780340018",
+      "origin": "STR"
+    }
+  ],
+  "3129": [
+    {
+      "title": "BBSC mit Abend zum Vergessen",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780478662",
+      "origin": "BER"
+    },
+    {
+      "title": "NawaRo behauptet sich klar mit 3:0!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780467238",
+      "origin": "STR"
+    },
+    {
+      "title": "Beim Schlusslicht zu Gast!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780431858",
+      "origin": "STR"
+    },
+    {
+      "title": "Niederbayern zu Gast in Köpenick",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780423519",
+      "origin": "BER"
+    }
+  ],
+  "3137": [
+    {
+      "title": "Zweite Niederlage am Doppelspieltag",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780616343",
+      "origin": "SWS"
+    },
+    {
+      "title": "NawaRo Straubing bezwingt Stralsund!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780573063",
+      "origin": "STR"
+    },
+    {
+      "title": "NawaRo empfängt Stralsund zum Rückspiel!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780535916",
+      "origin": "STR"
+    },
+    {
+      "title": "In Straubing nur Außenseiter",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780531564",
+      "origin": "SWS"
+    }
+  ],
+  "3143": [
+    {
+      "title": "Waldgirmes erhält eine Lehrstunde",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780755770",
+      "origin": "TVW"
+    },
+    {
+      "title": "3:0-Sieg in Waldgirmes!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780735171",
+      "origin": "STR"
+    },
+    {
+      "title": "Knifflige Auswärtsaufgabe",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780702983",
+      "origin": "STR"
+    }
+  ],
+  "3150": [
+    {
+      "title": "TVP unterliegt NawaRo Straubing mit 0:3",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780906912",
+      "origin": "TVP"
+    },
+    {
+      "title": "3:0-Auswärtssieg über Planegg-Krailling!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780903772",
+      "origin": "STR"
+    },
+    {
+      "title": "Auswärtsderby!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780870555",
+      "origin": "STR"
+    },
+    {
+      "title": "Derby-Time gegen NawaRo Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780833989",
+      "origin": "TVP"
+    }
+  ],
+  "3155": [
+    {
+      "title": "Satzgewinn beim Tabellenzweiten",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781020462",
+      "origin": "DSK"
+    },
+    {
+      "title": "NawaRo bezwingt Köln mit 3:1!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781007176",
+      "origin": "STR"
+    },
+    {
+      "title": "Köln gastiert bei NawaRo Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780987438",
+      "origin": "DSK"
+    },
+    {
+      "title": "NawaRo empfängt Köln!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780968048",
+      "origin": "STR"
+    }
+  ],
+  "3164": [
+    {
+      "title": "Derby-Niederlage gegen Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781158864",
+      "origin": "TVD"
+    },
+    {
+      "title": "3:0-Derbysieg in Dingolfing!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781157134",
+      "origin": "STR"
+    },
+    {
+      "title": "Niederbayernderby in Dingolfing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781129726",
+      "origin": "STR"
+    },
+    {
+      "title": "Niederbayern-Derby gegen Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781060558",
+      "origin": "TVD"
+    }
+  ],
+  "3174": [
+    {
+      "title": "Glatter 3:0-Heimsieg über Hörde!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781293091",
+      "origin": "STR"
+    },
+    {
+      "title": "Letztes Heimspiel!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781272426",
+      "origin": "STR"
+    }
+  ],
+  "3178": [
+    {
+      "title": "Straubing ist Vizemeister!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781373398",
+      "origin": "STR"
+    },
+    {
+      "title": "ESA VOLLEYS fehlte das Quäntchen Glück",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781371562",
+      "origin": "GRI"
+    },
+    {
+      "title": "ESA Volleys empfangen Straubing",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781357358",
+      "origin": "GRI"
+    },
+    {
+      "title": "Saisonfinale in Grimma.",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781353668",
+      "origin": "STR"
+    }
+  ],
+  "3188": [
+    {
+      "title": "Spannendes Spitzenspiel",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780313502",
+      "origin": "VCO"
+    },
+    {
+      "title": "3:1-Sieg in Dresden!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780277661",
+      "origin": "STR"
+    },
+    {
+      "title": "Wieder Doppelspiel-Wochenende",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780253143",
+      "origin": "VCO"
+    },
+    {
+      "title": "Hohe Auswärtshürde: Gastspiel in Dresden!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780250348",
+      "origin": "STR"
+    }
+  ],
+  "3202": [
+    {
+      "title": "Fünfter Streich in Folge!",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779472358",
+      "origin": "STR"
+    },
+    {
+      "title": "Duell gegen starke Nachwuchskräfte.",
+      "url": "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779451890",
+      "origin": "STR"
+    }
+  ]
+};
+
+const officialReportUrls = {
+  "3004": "https://distributor.sams-score.de/scoresheet/pdf/208332e9-b3a9-43e5-aad4-34a82f56af84/3004",
+  "3010": "https://distributor.sams-score.de/scoresheet/pdf/a65ccd96-f4d0-427f-9364-82fbc31d995a/3010",
+  "3016": "https://distributor.sams-score.de/scoresheet/pdf/959df3eb-1ef6-4455-bc80-578769bfdb8d/3016",
+  "3024": "https://distributor.sams-score.de/scoresheet/pdf/7d8f678f-6ee1-4467-9a21-4d110fe07190/3024",
+  "3034": "https://distributor.sams-score.de/scoresheet/pdf/060844cd-d73b-4215-8828-23d91a6fbaa2/3034",
+  "3038": "https://distributor.sams-score.de/scoresheet/pdf/9fd8c517-61b4-446f-9c1e-1be5054c6f13/3038",
+  "3046": "https://distributor.sams-score.de/scoresheet/pdf/b8e92775-1cdf-40fc-bf9d-905393e8d457/3046",
+  "3052": "https://distributor.sams-score.de/scoresheet/pdf/4e3282e7-ccd9-4d53-9bad-7cda3bd1f088/3052",
+  "3059": "https://distributor.sams-score.de/scoresheet/pdf/5ad2153b-801a-48f5-bf5c-250744780150/3059",
+  "3064": "https://distributor.sams-score.de/scoresheet/pdf/e11666bf-cbcc-48ac-aa7f-2c24bbe73f41/3064",
+  "3073": "https://distributor.sams-score.de/scoresheet/pdf/be68aedb-b656-47af-8c10-789509acfcff/3073",
+  "3083": "https://distributor.sams-score.de/scoresheet/pdf/ac29fc55-2327-4f9d-86f9-257b08e42412/3083",
+  "3087": "https://distributor.sams-score.de/scoresheet/pdf/59f25bf9-1bde-4131-9b34-61fa9ca6d7d7/3087",
+  "3095": "https://distributor.sams-score.de/scoresheet/pdf/d747dc17-4ece-4eb8-be7c-ed54649eace0/3095",
+  "3101": "https://distributor.sams-score.de/scoresheet/pdf/653ee276-a3f3-422e-b278-88a640ed7588/3101",
+  "3107": "https://distributor.sams-score.de/scoresheet/pdf/6679d640-96a3-483a-b3a8-2ac8b88b88ed/3107",
+  "3115": "https://distributor.sams-score.de/scoresheet/pdf/8bb21828-b6c3-4a5c-99fe-a5577267e884/3115",
+  "3125": "https://distributor.sams-score.de/scoresheet/pdf/fcac4f23-1bd2-4739-a68f-d4094ddb8a31/3125",
+  "3129": "https://distributor.sams-score.de/scoresheet/pdf/bd0224ac-17c7-45e2-8026-eea18051b887/3129",
+  "3137": "https://distributor.sams-score.de/scoresheet/pdf/dd9c86b1-0de5-423b-b85e-8fcb400e175d/3137",
+  "3143": "https://distributor.sams-score.de/scoresheet/pdf/3e2e69fb-db9f-409d-acf1-994b5abddb6a/3143",
+  "3150": "https://distributor.sams-score.de/scoresheet/pdf/0df17ec1-d1d3-4231-898c-b83a30b98f10/3150",
+  "3155": "https://distributor.sams-score.de/scoresheet/pdf/11189648-76bd-47f0-85f4-a1af1430bccd/3155",
+  "3164": "https://distributor.sams-score.de/scoresheet/pdf/b83ecd30-84b6-430a-b108-89461c1e5890/3164",
+  "3174": "https://distributor.sams-score.de/scoresheet/pdf/1271408c-49d3-410f-9d2e-d25c6b022c67/3174",
+  "3178": "https://distributor.sams-score.de/scoresheet/pdf/6d67145b-5c53-4d6f-8b3e-33b29bd7f543/3178",
+  "3188": "https://distributor.sams-score.de/scoresheet/pdf/2b75f4a7-2739-4a79-a694-9ba3006fd922/3188",
+  "3202": "https://distributor.sams-score.de/scoresheet/pdf/020f1071-7be5-44f6-bcd7-f528f1111f74/3202"
+};
+
+const unavailableStatistics = [3004, 3164];
+
+const gameSummaries = {
+  "3004": [
+    "In einem hochdramatischen und emotionalen Volleyballkrimi der 2.",
+    "Aus Straubinger Sicht endete die Partie gegen Eintracht Spontent Düsseldorf 3:2; die Sätze lauteten 23:25, 25:14, 26:28, 25:13, 15:12.",
+    "Der Sieg stand nach 109 Minuten fest und wurde von 100 Zuschauern verfolgt."
+  ],
+  "3010": [
+    "Beim hart erkämpften 3:2 in Straubing wird Marian Mischo zur wertvollsten Spielerin gewählt.",
+    "Aus Straubinger Sicht endete die Partie gegen BayerVolleys Leverkusen 2:3; die Sätze lauteten 23:25, 21:25, 25:21, 25:15, 14:16.",
+    "Die Niederlage stand nach 123 Minuten fest und wurde von 600 Zuschauern verfolgt."
+  ],
+  "3016": [
+    "Es war das erwartet schwere Auswärtsspiel für NawaRo Straubing beim VfL Oythe, aber am Ende konnten die Gäubodenstädterinnen mit zwei Zählern im Gepäck die Heimreise antreten.",
+    "Aus Straubinger Sicht endete die Partie gegen VfL Oythe 3:2; die Sätze lauteten 25:19, 25:17, 19:25, 20:25, 15:12.",
+    "Der Sieg stand nach 124 Minuten fest und wurde von 215 Zuschauern verfolgt."
+  ],
+  "3024": [
+    "Zum zweiten Auswärtsspiel der Saison erwartete am 11.10.2025 mit dem Vorjahresfünften und aktuellen Tabellensiebenten NawaRo Straubing eine bundes-ligaerfahrene Mannschaft die Neuseenland-Volleys.",
+    "Aus Straubinger Sicht endete die Partie gegen Neuseenland-Volleys Markkleeberg 3:1; die Sätze lauteten 25:15, 22:25, 25:16, 26:24.",
+    "Der Sieg stand nach 99 Minuten fest und wurde von 400 Zuschauern verfolgt."
+  ],
+  "3034": [
+    "Der langjährige Erstligist Rote Raben Vilsbiburg war am Samstagabend für die Gäubodenstädterinnen eine Nummer zu groß.",
+    "Aus Straubinger Sicht endete die Partie gegen Rote Raben Vilsbiburg 0:3; die Sätze lauteten 21:25, 23:25, 14:25.",
+    "Die Niederlage stand nach 69 Minuten fest und wurde von 1.293 Zuschauern verfolgt."
+  ],
+  "3038": [
+    "Ohne Punkte für die Tabelle kehrte der BBSC vom Auswärtsspiel in die Hauptstadt zurück, jedoch war das Auftreten der Mannschaft ein Kompliment wert: nie aufgesteckt und knapp vor Satzgewinn.",
+    "Aus Straubinger Sicht endete die Partie gegen BBSC Berlin 3:0; die Sätze lauteten 27:25, 25:16, 25:17.",
+    "Der Sieg stand nach 72 Minuten fest und wurde von 100 Zuschauern verfolgt."
+  ],
+  "3046": [
+    "Nach einem furiosen Spiel im Pokal zeigte das Team eine ernüchternde Leistung.",
+    "Aus Straubinger Sicht endete die Partie gegen Sparkassen Wildcats Stralsund 3:1; die Sätze lauteten 20:25, 25:14, 25:13, 25:13.",
+    "Der Sieg stand nach 85 Minuten fest und wurde von 473 Zuschauern verfolgt."
+  ],
+  "3052": [
+    "Nawaro Straubing - TV Waldgirmes 3:1 / 94:92 (17:25 27:25 25:20 25:22) „Es war einfach unglaublich schwer sie out of system zu bekommen.“ sagte Trainer Daniel Bock nach dem Spiel.",
+    "Aus Straubinger Sicht endete die Partie gegen TV Waldgirmes 3:1; die Sätze lauteten 17:25, 27:25, 25:20, 25:22.",
+    "Der Sieg stand nach 94 Minuten fest und wurde von 250 Zuschauern verfolgt."
+  ],
+  "3059": [
+    "NawaRo Straubing beendet das Heimspielwochenende mit einer denkbar knappen 2:3-Niederlage gegen den TV Planegg-Krailling (25:23 22:25 13:25 25:14 12:15).",
+    "Aus Straubinger Sicht endete die Partie gegen TV Planegg-Krailling 2:3; die Sätze lauteten 25:23, 22:25, 13:25, 25:14, 12:15.",
+    "Die Niederlage stand nach 106 Minuten fest und wurde von 400 Zuschauern verfolgt."
+  ],
+  "3064": [
+    "DSHS SnowTrex Köln hat zum Auftakt des Doppelspieltags in der Sparda 2.",
+    "Aus Straubinger Sicht endete die Partie gegen DSHS SnowTrex Köln 3:1; die Sätze lauteten 22:25, 25:13, 25:10, 25:17.",
+    "Der Sieg stand nach 88 Minuten fest und wurde von 120 Zuschauern verfolgt."
+  ],
+  "3073": [
+    "Mit 0:3 verlor der TV Dingolfing am Samstagabend das Niederbayern-Derby bei Nawaro Straubing.",
+    "Aus Straubinger Sicht endete die Partie gegen TV Dingolfing 3:0; die Sätze lauteten 25:18, 25:16, 25:11.",
+    "Der Sieg stand nach 65 Minuten fest und wurde von 500 Zuschauern verfolgt."
+  ],
+  "3083": [
+    "Auch das Spiel am Sonntag verlieren die Hörder Mädchen.",
+    "Aus Straubinger Sicht endete die Partie gegen TV Hörde 3:0; die Sätze lauteten 25:14, 25:13, 25:16.",
+    "Der Sieg stand nach 60 Minuten fest und wurde von 67 Zuschauern verfolgt."
+  ],
+  "3087": [
+    "NawaRo Straubing macht mit einem 3:0-Heimsieg über Grimma (25:22 25:16 25:21) das erste Sechs-Punkte-Wochenende 2026 eindrucksvoll perfekt.",
+    "Aus Straubinger Sicht endete die Partie gegen ESA Grimma Volleys 3:0; die Sätze lauteten 25:22, 25:16, 25:21.",
+    "Der Sieg stand nach 75 Minuten fest und wurde von 350 Zuschauern verfolgt."
+  ],
+  "3095": [
+    "NawaRo Straubing startet stark in das neue Kalenderjahr, denn Eintracht Spontent Düsseldorf konnte vor 509 Zuschauern mit 3:1 (25:17 25:13 23:25 25:20) bezwungen werden.",
+    "Aus Straubinger Sicht endete die Partie gegen Eintracht Spontent Düsseldorf 3:1; die Sätze lauteten 25:17, 25:13, 23:25, 25:20.",
+    "Der Sieg stand nach 81 Minuten fest und wurde von 520 Zuschauern verfolgt."
+  ],
+  "3101": [
+    "Keine Ausbeute im ersten Heimspiel des Jahres.",
+    "Aus Straubinger Sicht endete die Partie gegen BayerVolleys Leverkusen 3:1; die Sätze lauteten 25:18, 25:21, 17:25, 25:23.",
+    "Der Sieg stand nach 92 Minuten fest und wurde von 248 Zuschauern verfolgt."
+  ],
+  "3107": [
+    "NawaRo Straubing bezwingt am Samstagabend im Spitzenspiel den VfL Oythe klar mit 3:1 (25:13, 17:25, 25:23, 25:14) und behauptet somit den zweiten Tabellenplatz der Sparda 2.",
+    "Aus Straubinger Sicht endete die Partie gegen VfL Oythe 3:1; die Sätze lauteten 25:13, 17:25, 25:23, 25:14.",
+    "Der Sieg stand nach 90 Minuten fest und wurde von 750 Zuschauern verfolgt."
+  ],
+  "3115": [
+    "Am Sonntag, dem 16.11.2025, kamen die Damen von NawaRo Straubing inclusive einiger freundlicher Fans schon zum Saisonrückspiel nach Markkleeberg.",
+    "Aus Straubinger Sicht endete die Partie gegen Neuseenland-Volleys Markkleeberg 3:1; die Sätze lauteten 25:15, 25:19, 21:25, 25:20.",
+    "Der Sieg stand nach 85 Minuten fest und wurde von 223 Zuschauern verfolgt."
+  ],
+  "3125": [
+    "Mit 3:0 nach Sätzen konnte der mehrfache deutsche Meister und Pokalsieger von 2014 - Rote Raben Vilsbiburg – NawaRo Straubing am Samstagabend in heimischer Halle eine schmerzhafte Niederlage zufügen.",
+    "Aus Straubinger Sicht endete die Partie gegen Rote Raben Vilsbiburg 0:3; die Sätze lauteten 13:25, 19:25, 22:25.",
+    "Die Niederlage stand nach 63 Minuten fest und wurde von 864 Zuschauern verfolgt."
+  ],
+  "3129": [
+    "Der Tabellenzweite NawaRo Straubing präsentierte am Samstagabend dem Berliner Publikum, wie in dieser Liga moderner Volleyball gespielt wird - der BBSC hatte in der gezeigten Form keine Chance.",
+    "Aus Straubinger Sicht endete die Partie gegen BBSC Berlin 3:0; die Sätze lauteten 25:19, 25:12, 25:9.",
+    "Der Sieg stand nach 54 Minuten fest und wurde von 145 Zuschauern verfolgt."
+  ],
+  "3137": [
+    "Das Team erarbeitete sich durch ihr Spiel viel Anerkennung und Respekt.",
+    "Aus Straubinger Sicht endete die Partie gegen Sparkassen Wildcats Stralsund 3:0; die Sätze lauteten 25:22, 25:20, 25:14.",
+    "Der Sieg stand nach 71 Minuten fest und wurde von 760 Zuschauern verfolgt."
+  ],
+  "3143": [
+    "TV Waldgirmes – NaWaRo Straubing 0:3 (12:25 22:25 9:25).",
+    "Aus Straubinger Sicht endete die Partie gegen TV Waldgirmes 3:0; die Sätze lauteten 25:12, 25:22, 25:9.",
+    "Der Sieg stand nach 60 Minuten fest und wurde von 100 Zuschauern verfolgt."
+  ],
+  "3150": [
+    "Der TV Planegg-Krailling muss sich im Heimspiel gegen NawaRo Straubing deutlich mit 0:3 geschlagen geben (18:25,19:25,21:25).",
+    "Aus Straubinger Sicht endete die Partie gegen TV Planegg-Krailling 3:0; die Sätze lauteten 25:18, 25:19, 25:21.",
+    "Der Sieg stand nach 68 Minuten fest und wurde von 220 Zuschauern verfolgt."
+  ],
+  "3155": [
+    "Trotz großer personeller Sorgen und eines Ausfalls beim Aufwärmen zeigte DSHS SnowTrex Köln beim Tabellenzweiten NawaRo Straubing eine couragierte Leistung.",
+    "Aus Straubinger Sicht endete die Partie gegen DSHS SnowTrex Köln 3:1; die Sätze lauteten 20:25, 25:20, 25:15, 25:14.",
+    "Der Sieg stand nach 92 Minuten fest und wurde von 500 Zuschauern verfolgt."
+  ],
+  "3164": [
+    "In drei Sätzen unterlag der TV Dingolfing am Sonntagnachmittag im Niederbayern-Derby Favorit und Tabellenzweiten Nawaro Straubing vor knapp 600 Zuschauern.",
+    "Aus Straubinger Sicht endete die Partie gegen TV Dingolfing 3:0; die Sätze lauteten 25:22, 25:17, 25:14.",
+    "Der Sieg stand nach 73 Minuten fest und wurde von 568 Zuschauern verfolgt."
+  ],
+  "3174": [
+    "NawaRo Straubing setzt sich am Samstagabend vor 750 Zuschauern verdientermaßen mit 3:0 (25:18, 25:19, 25:16) gegen Hörde durch.",
+    "Aus Straubinger Sicht endete die Partie gegen TV Hörde 3:0; die Sätze lauteten 25:18, 25:19, 25:16.",
+    "Der Sieg stand nach 68 Minuten fest und wurde von 750 Zuschauern verfolgt."
+  ],
+  "3178": [
+    "NawaRo Straubing hat mit einem 3:1-Auswärtserfolg in Grimma (26:24, 23:25, 25:15, 25:15) die Vizemeisterschaft der Sparda 2.",
+    "Aus Straubinger Sicht endete die Partie gegen ESA Grimma Volleys 3:1; die Sätze lauteten 26:24, 23:25, 25:15, 25:15.",
+    "Der Sieg stand nach 95 Minuten fest und wurde von 338 Zuschauern verfolgt."
+  ],
+  "3188": [
+    "Der VCO Dresden empfing am 31.",
+    "Aus Straubinger Sicht endete die Partie gegen VCO Dresden 3:1; die Sätze lauteten 19:25, 25:12, 25:23, 25:18.",
+    "Der Sieg stand nach 84 Minuten fest und wurde von 86 Zuschauern verfolgt."
+  ],
+  "3202": [
+    "Am Samstagabend bezwingt NawaRo Straubing in beeindruckender Manier die top ausgebildeten Talente von VCO Dresden vor rund 350 Zuschauern mit 3:1 (27:29 25:11 25:13 25:19).",
+    "Aus Straubinger Sicht endete die Partie gegen VCO Dresden 3:1; die Sätze lauteten 27:29, 25:11, 25:13, 25:19.",
+    "Der Sieg stand nach 86 Minuten fest und wurde von 150 Zuschauern verfolgt."
+  ]
+};
 
 const games = [
   {
@@ -616,7 +1329,6 @@ const games = [
       "13:25",
       "12:15"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/208332e9-b3a9-43e5-aad4-34a82f56af84/3004",
     rankAfter: 4,
     venue: "DH Brinckmannstraße, Hulda Pankok",
     spectators: 100,
@@ -632,10 +1344,6 @@ const games = [
         name: "Valbona Ismaili",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=158916735"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778429330",
-    summary: [
-      "In einem hochdramatischen und emotionalen Volleyballkrimi der 2. Bundesliga Pro der Frauen musste sich Eintracht Spontent am Dienstagabend knapp mit 2:3 dem Topteam NawaRo Straubing geschlagen geben."
     ],
     videoUrl: "https://www.youtube.com/watch?v=cIskygiYw40&pp=ygUzRFlOIEVpbnRyYWNodCBTcG9udGVudCBEw7xzc2VsZG9yZiBOYXdhcm8gU3RyYXViaW5n"
   },
@@ -656,7 +1364,6 @@ const games = [
       "25:15",
       "14:16"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/a65ccd96-f4d0-427f-9364-82fbc31d995a/3010",
     rankAfter: 7,
     venue: "turmair Volleyballarena",
     spectators: 600,
@@ -672,10 +1379,6 @@ const games = [
         name: "Marian Mischo",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308933&userId=685843413"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778504288",
-    summary: [
-      "Beim hart erkämpften 3:2 in Straubing wird Marian Mischo zur wertvollsten Spielerin gewählt"
     ],
     videoUrl: "https://www.youtube.com/watch?v=iUW-B97dKew"
   },
@@ -696,7 +1399,6 @@ const games = [
       "25:20",
       "12:15"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/959df3eb-1ef6-4455-bc80-578769bfdb8d/3016",
     rankAfter: 6,
     venue: "SH Gymnasium Antonianum Vechta",
     spectators: 215,
@@ -712,10 +1414,6 @@ const games = [
         name: "Valbona Ismaili",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=158916735"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778576820",
-    summary: [
-      "Es war das erwartet schwere Auswärtsspiel für NawaRo Straubing beim VfL Oythe, aber am Ende konnten die Gäubodenstädterinnen mit zwei Zählern im Gepäck die Heimreise antreten."
     ],
     videoUrl: "https://www.youtube.com/live/X1TifBuQR5I?si=DaxwatD3wjLkHo-o"
   },
@@ -735,7 +1433,6 @@ const games = [
       "25:16",
       "26:24"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/7d8f678f-6ee1-4467-9a21-4d110fe07190/3024",
     rankAfter: 5,
     venue: "turmair Volleyballarena",
     spectators: 400,
@@ -751,10 +1448,6 @@ const games = [
         name: "Lilly Roßberg",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309559&userId=770982472"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778675270",
-    summary: [
-      "Zum zweiten Auswärtsspiel der Saison erwartete am 11.10.2025 mit dem Vorjahresfünften und aktuellen Tabellensiebenten NawaRo Straubing eine bundes-ligaerfahrene Mannschaft die Neuseenland-Volleys"
     ],
     videoUrl: "https://www.youtube.com/live/4DqRDrqLc84?si=AuL-2ejbQRvqnjBl"
   },
@@ -773,7 +1466,6 @@ const games = [
       "25:23",
       "25:14"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/060844cd-d73b-4215-8828-23d91a6fbaa2/3034",
     rankAfter: 7,
     venue: "Ballsporthalle Vilsbiburg",
     spectators: 1293,
@@ -789,10 +1481,6 @@ const games = [
         name: "Valbona Ismaili",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=158916735"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=778784266",
-    summary: [
-      "Der langjährige Erstligist Rote Raben Vilsbiburg war am Samstagabend für die Gäubodenstädterinnen eine Nummer zu groß. Am Ende stand ein 0:3 aus NawaRo-Sicht."
     ],
     videoUrl: "https://www.youtube.com/live/dkBUaQSwYAI?si=xtEo70digjrBO-H8"
   },
@@ -811,7 +1499,6 @@ const games = [
       "25:16",
       "25:17"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/9fd8c517-61b4-446f-9c1e-1be5054c6f13/3038",
     rankAfter: 6,
     venue: "turmair Volleyballarena",
     spectators: 100,
@@ -827,10 +1514,6 @@ const games = [
         name: "Sophia Minlend",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308987&userId=752329376"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779014400",
-    summary: [
-      "Ohne Punkte für die Tabelle kehrte der BBSC vom Auswärtsspiel in die Hauptstadt zurück, jedoch war das Auftreten der Mannschaft ein Kompliment wert: nie aufgesteckt und knapp vor Satzgewinn"
     ],
     videoUrl: "https://www.youtube.com/live/V78zP-BNmSc?si=a3HAD5P3ybQDhgJd"
   },
@@ -850,7 +1533,6 @@ const games = [
       "13:25",
       "13:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/b8e92775-1cdf-40fc-bf9d-905393e8d457/3046",
     rankAfter: 5,
     venue: "Diesterweg-Sporthalle",
     spectators: 473,
@@ -866,10 +1548,6 @@ const games = [
         name: "Amber de Tant",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=751749162"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779285948",
-    summary: [
-      "Nach einem furiosen Spiel im Pokal zeigte das Team eine ernüchternde Leistung"
     ],
     videoUrl: "https://www.youtube.com/live/aP7UdWGicRc?si=958bOjAQaAYnLxV0"
   },
@@ -889,7 +1567,6 @@ const games = [
       "25:21",
       "20:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/8bb21828-b6c3-4a5c-99fe-a5577267e884/3115",
     rankAfter: 4,
     venue: "Neuseenlandhalle",
     spectators: 223,
@@ -905,10 +1582,6 @@ const games = [
         name: "Theresa Barner",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=750792046"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779290045",
-    summary: [
-      "Am Sonntag, dem 16.11.2025, kamen die Damen von NawaRo Straubing inclusive einiger freundlicher Fans schon zum Saisonrückspiel nach Markkleeberg."
     ],
     videoUrl: "https://www.youtube.com/live/5Hl90D9nhvU?si=SDynTlKQAm_CWYjf"
   },
@@ -928,7 +1601,6 @@ const games = [
       "25:20",
       "25:22"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/4e3282e7-ccd9-4d53-9bad-7cda3bd1f088/3052",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 250,
@@ -944,10 +1616,6 @@ const games = [
         name: "Maja Löcker",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309795&userId=750736056"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779392290",
-    summary: [
-      "Nawaro Straubing - TV Waldgirmes 3:1 / 94:92 (17:25 27:25 25:20 25:22) „Es war einfach unglaublich schwer sie out of system zu bekommen.“ sagte Trainer Daniel Bock nach dem Spiel."
     ],
     videoUrl: "https://www.youtube.com/live/2RGQWsr9K94?si=CrUJR-UriWw-uvze"
   },
@@ -967,7 +1635,6 @@ const games = [
       "25:13",
       "25:19"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/020f1071-7be5-44f6-bcd7-f528f1111f74/3202",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 150,
@@ -983,10 +1650,6 @@ const games = [
         name: "Zoe Albert",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309105&userId=771894233"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779472358",
-    summary: [
-      "Am Samstagabend bezwingt NawaRo Straubing in beeindruckender Manier die top ausgebildeten Talente von VCO Dresden vor rund 350 Zuschauern mit 3:1 (27:29 25:11 25:13 25:19)."
     ],
     videoUrl: "https://www.youtube.com/live/6k_iE3Cvrk4?si=MGwl6zkUojmUdTxv"
   },
@@ -1007,7 +1670,6 @@ const games = [
       "25:14",
       "12:15"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/5ad2153b-801a-48f5-bf5c-250744780150/3059",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 400,
@@ -1023,10 +1685,6 @@ const games = [
         name: "Julia Ziegler",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309673&userId=742449977"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779489769",
-    summary: [
-      "NawaRo Straubing beendet das Heimspielwochenende mit einer denkbar knappen 2:3-Niederlage gegen den TV Planegg-Krailling (25:23 22:25 13:25 25:14 12:15)."
     ],
     videoUrl: "https://www.youtube.com/live/Gbc-NFKxP_c?si=GwDipqBfGvkwU5D1"
   },
@@ -1046,7 +1704,6 @@ const games = [
       "10:25",
       "17:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/e11666bf-cbcc-48ac-aa7f-2c24bbe73f41/3064",
     rankAfter: 2,
     venue: "Deutsche Sporthochschule Köln, Halle 22",
     spectators: 120,
@@ -1062,10 +1719,6 @@ const games = [
         name: "Valbona Ismaili",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=158916735"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779583782",
-    summary: [
-      "DSHS SnowTrex Köln hat zum Auftakt des Doppelspieltags in der Sparda 2. Liga Pro trotz guter Anfangsphase eine 1:3-Heimniederlage gegen den Tabellenzweiten NawaRo Straubing hinnehmen müssen."
     ],
     videoUrl: "https://www.youtube.com/watch?v=0jImxEjn9xc"
   },
@@ -1084,7 +1737,6 @@ const games = [
       "13:25",
       "16:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/ac29fc55-2327-4f9d-86f9-257b08e42412/3083",
     rankAfter: 2,
     venue: "Sporthalle Phoenix (Hörde III)",
     spectators: 67,
@@ -1100,10 +1752,6 @@ const games = [
         name: "Valbona Ismaili",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=158916735"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779640795",
-    summary: [
-      "Auch das Spiel am Sonntag verlieren die Hörder Mädchen."
     ],
     videoUrl: "https://www.youtube.com/live/H6L8Xmy-rbY?si=3SP5DVBJhKnQU8Qb"
   },
@@ -1122,7 +1770,6 @@ const games = [
       "25:16",
       "25:11"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/be68aedb-b656-47af-8c10-789509acfcff/3073",
     rankAfter: 1,
     venue: "turmair Volleyballarena",
     spectators: 500,
@@ -1138,10 +1785,6 @@ const games = [
         name: "Katherine Konkle",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309004&userId=777954769"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=779713818",
-    summary: [
-      "Mit 0:3 verlor der TV Dingolfing am Samstagabend das Niederbayern-Derby bei Nawaro Straubing."
     ],
     videoUrl: "https://www.youtube.com/live/2_8TQysZPJ0?si=pqhEEVmuXpO0BuFM"
   },
@@ -1161,7 +1804,6 @@ const games = [
       "23:25",
       "25:20"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/d747dc17-4ece-4eb8-be7c-ed54649eace0/3095",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 520,
@@ -1177,10 +1819,6 @@ const games = [
         name: "Carlotta Strube",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776311815&userId=678972761"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780004838",
-    summary: [
-      "NawaRo Straubing startet stark in das neue Kalenderjahr, denn Eintracht Spontent Düsseldorf konnte vor 509 Zuschauern mit 3:1 (25:17 25:13 23:25 25:20) bezwungen werden."
     ],
     videoUrl: "https://www.youtube.com/watch?v=vN3VY_8f_9w&t=28s&pp=ygUzRFlOIEVpbnRyYWNodCBTcG9udGVudCBEw7xzc2VsZG9yZiBOYXdhcm8gU3RyYXViaW5n0gcJCUELAYcqIYzv"
   },
@@ -1199,7 +1837,6 @@ const games = [
       "25:16",
       "25:21"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/59f25bf9-1bde-4131-9b34-61fa9ca6d7d7/3087",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 350,
@@ -1215,10 +1852,6 @@ const games = [
         name: "Marie Dreblow",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308803&userId=70141787"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780018188",
-    summary: [
-      "NawaRo Straubing macht mit einem 3:0-Heimsieg über Grimma (25:22 25:16 25:21) das erste Sechs-Punkte-Wochenende 2026 eindrucksvoll perfekt."
     ],
     videoUrl: "https://www.youtube.com/live/ZjQ4oANHm3k?si=leIJCZLYJyTAteJd"
   },
@@ -1238,7 +1871,6 @@ const games = [
       "25:17",
       "23:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/653ee276-a3f3-422e-b278-88a640ed7588/3101",
     rankAfter: 2,
     venue: "Ostermann-Arena",
     spectators: 248,
@@ -1254,10 +1886,6 @@ const games = [
         name: "Theresa Barner",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=750792046"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780122793",
-    summary: [
-      "Keine Ausbeute im ersten Heimspiel des Jahres"
     ],
     videoUrl: "https://www.youtube.com/watch?v=r9wfPO92v4s"
   },
@@ -1277,7 +1905,6 @@ const games = [
       "25:23",
       "25:14"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/6679d640-96a3-483a-b3a8-2ac8b88b88ed/3107",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 750,
@@ -1293,10 +1920,6 @@ const games = [
         name: "Maria Petkova",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308853&userId=777895333"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780182903",
-    summary: [
-      "NawaRo Straubing bezwingt am Samstagabend im Spitzenspiel den VfL Oythe klar mit 3:1 (25:13, 17:25, 25:23, 25:14) und behauptet somit den zweiten Tabellenplatz der Sparda 2. Liga Pro."
     ],
     videoUrl: "https://www.youtube.com/live/8YHq9piXuX0?si=6Lok5Upv42_y6BjR"
   },
@@ -1316,7 +1939,6 @@ const games = [
       "23:25",
       "18:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/2b75f4a7-2739-4a79-a694-9ba3006fd922/3188",
     rankAfter: 2,
     venue: "Schulsporthalle des Sportschulzentrum",
     spectators: 86,
@@ -1332,10 +1954,6 @@ const games = [
         name: "Delaney Elizabeth Hogan",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=777743932"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780313502",
-    summary: [
-      "Der VCO Dresden empfing am 31. Januar um 19 Uhr vor großer Kulisse den Vizetabellenführer NawaRo Straubing. Mit viel Vorfreude und hohen Erwartungen ging Dresden in das Duell, das von Beginn an durch"
     ],
     videoUrl: "https://www.youtube.com/live/gegbzNtsa8c?si=kph__Bc1EAaqqqe5"
   },
@@ -1354,7 +1972,6 @@ const games = [
       "19:25",
       "22:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/fcac4f23-1bd2-4739-a68f-d4094ddb8a31/3125",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 864,
@@ -1370,10 +1987,6 @@ const games = [
         name: "Pia Fernau",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309082&userId=678774889"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780379225",
-    summary: [
-      "Mit 3:0 nach Sätzen konnte der mehrfache deutsche Meister und Pokalsieger von 2014 - Rote Raben Vilsbiburg – NawaRo Straubing am Samstagabend in heimischer Halle eine schmerzhafte Niederlage zufügen."
     ],
     videoUrl: "https://www.youtube.com/live/KIRh4YbMC0Q?si=_YfCxQqGpebTllTp"
   },
@@ -1392,7 +2005,6 @@ const games = [
       "12:25",
       "9:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/bd0224ac-17c7-45e2-8026-eea18051b887/3129",
     rankAfter: 2,
     venue: "Sporthalle Hämmerlingstraße",
     spectators: 145,
@@ -1408,10 +2020,6 @@ const games = [
         name: "Paula Gürsching",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=742778846"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780478662",
-    summary: [
-      "Der Tabellenzweite NawaRo Straubing präsentierte am Samstagabend dem Berliner Publikum, wie in dieser Liga moderner Volleyball gespielt wird - der BBSC hatte in der gezeigten Form keine Chance."
     ],
     videoUrl: "https://www.youtube.com/live/LvcV98smFPA?si=UED5h-AJyYF4dJLY"
   },
@@ -1430,7 +2038,6 @@ const games = [
       "25:20",
       "25:14"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/dd9c86b1-0de5-423b-b85e-8fcb400e175d/3137",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 760,
@@ -1446,10 +2053,6 @@ const games = [
         name: "Gesa Brandstrup",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309386&userId=752329134"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780616343",
-    summary: [
-      "Das Team erarbeitete sich durch ihr Spiel viel Anerkennung und Respekt"
     ],
     videoUrl: "https://www.youtube.com/live/-Ew3EIMdgKM?si=jXxiDyejbq1SwW2q"
   },
@@ -1468,7 +2071,6 @@ const games = [
       "22:25",
       "9:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/3e2e69fb-db9f-409d-acf1-994b5abddb6a/3143",
     rankAfter: 2,
     venue: "Sporthalle der Lahntalschule Atzbach",
     spectators: 100,
@@ -1484,10 +2086,6 @@ const games = [
         name: "Amber de Tant",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=751749162"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780755770",
-    summary: [
-      "TV Waldgirmes – NaWaRo Straubing 0:3 (12:25 22:25 9:25). Am Ende stand ein klarer Sieg des Teams aus Ostbayern. Es war das erste Mal, dass Waldgirmes in einem Heimspiel quasi chancenlos war."
     ],
     videoUrl: "https://www.youtube.com/live/-YuWpuyfppI?si=0CpiXswcDwEXHOVK"
   },
@@ -1506,7 +2104,6 @@ const games = [
       "19:25",
       "21:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/0df17ec1-d1d3-4231-898c-b83a30b98f10/3150",
     rankAfter: 2,
     venue: "Feodor-Lynen-Gymnasium",
     spectators: 220,
@@ -1522,10 +2119,6 @@ const games = [
         name: "Maia Rackel",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=771986028"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=780906912",
-    summary: [
-      "Der TV Planegg-Krailling muss sich im Heimspiel gegen NawaRo Straubing deutlich mit 0:3 geschlagen geben (18:25,19:25,21:25). Straubing überzeugte mit einer konsequenten Leistung und gewann verdient."
     ],
     videoUrl: "https://www.youtube.com/live/tSHqf8A2yi4?si=0p_Er4aEW3bMdXG2"
   },
@@ -1545,7 +2138,6 @@ const games = [
       "25:15",
       "25:14"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/11189648-76bd-47f0-85f4-a1af1430bccd/3155",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 500,
@@ -1561,10 +2153,6 @@ const games = [
         name: "Annika Stenchly",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308895&userId=70003721"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781020462",
-    summary: [
-      "Trotz großer personeller Sorgen und eines Ausfalls beim Aufwärmen zeigte DSHS SnowTrex Köln beim Tabellenzweiten NawaRo Straubing eine couragierte Leistung."
     ],
     videoUrl: "https://www.youtube.com/watch?v=-FkRIwJ7_KI&t=2427s"
   },
@@ -1583,7 +2171,6 @@ const games = [
       "17:25",
       "14:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/b83ecd30-84b6-430a-b108-89461c1e5890/3164",
     rankAfter: 2,
     venue: "Sporthalle Höll-Ost",
     spectators: 568,
@@ -1599,10 +2186,6 @@ const games = [
         name: "Maia Rackel",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=771986028"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781158864",
-    summary: [
-      "In drei Sätzen unterlag der TV Dingolfing am Sonntagnachmittag im Niederbayern-Derby Favorit und Tabellenzweiten Nawaro Straubing vor knapp 600 Zuschauern."
     ],
     videoUrl: "https://www.youtube.com/live/a47Xc8EBuFc?si=2YOhZ87erEAMtAV-"
   },
@@ -1621,7 +2204,6 @@ const games = [
       "25:19",
       "25:16"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/1271408c-49d3-410f-9d2e-d25c6b022c67/3174",
     rankAfter: 2,
     venue: "turmair Volleyballarena",
     spectators: 750,
@@ -1637,10 +2219,6 @@ const games = [
         name: "Emma Neukirchen",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776309275&userId=771345481"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781293091",
-    summary: [
-      "NawaRo Straubing setzt sich am Samstagabend vor 750 Zuschauern verdientermaßen mit 3:0 (25:18, 25:19, 25:16) gegen Hörde durch."
     ],
     videoUrl: "https://www.youtube.com/live/Fo-xBzlk3qU?si=1I16KvwBMhKEd1we"
   },
@@ -1660,7 +2238,6 @@ const games = [
       "15:25",
       "15:25"
     ],
-    statsUrl: "https://distributor.sams-score.de/scoresheet/pdf/6d67145b-5c53-4d6f-8b3e-33b29bd7f543/3178",
     rankAfter: 2,
     venue: "Muldentalhalle",
     spectators: 338,
@@ -1676,10 +2253,6 @@ const games = [
         name: "Paula Gürsching",
         url: "https://www.volleyball-bundesliga.de/popup/teamMember/teamMemberDetails.xhtml?teamId=776308823&userId=742778846"
       }
-    ],
-    articleUrl: "https://www.volleyball-bundesliga.de/popup/article/fullArticle.xhtml?articleId=781373398",
-    summary: [
-      "NawaRo Straubing hat mit einem 3:1-Auswärtserfolg in Grimma (26:24, 23:25, 25:15, 25:15) die Vizemeisterschaft der Sparda 2. Liga Pro fixiert."
     ],
     videoUrl: "https://www.youtube.com/live/-iWMObGD6sY?si=1g3_W2e_RiDDMnpi"
   }
